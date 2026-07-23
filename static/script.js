@@ -141,49 +141,29 @@ document.addEventListener("DOMContentLoaded", () => {
 //
     
     // ==========================================
-    // PORTFOLIO GRID VIDEO LOOPS (SINGLE PLAY FIX)
+    // PORTFOLIO GRID VIDEOS
     // ==========================================
     document.querySelectorAll('.video-container').forEach((container) => {
         const video = container.querySelector('.video-3d');
         if (!video) return;
 
+        // Apply the same behavior everywhere
+        video.loop = false;
+        video.autoplay = false;
+        video.removeAttribute('autoplay');
+        video.removeAttribute('loop');
 
-        const isMobileOrTablet = window.matchMedia("(pointer: coarse)").matches || (('ontouchstart' in window) && window.innerWidth < 1024);
+        video.muted = false;
+        video.removeAttribute('muted');
 
-        const isMobile = () => isMobileOrTablet;
+        video.controls = true;
+        video.setAttribute('controls', '');
+        video.setAttribute('controlsList', 'nodownload');
 
-        function configureVideoBehavior() {
-            if (isMobile()) {
-                video.loop = false;
-                video.autoplay = false;
-                video.removeAttribute('autoplay');
-                video.removeAttribute('loop');
-                
-                video.muted = false;
-                video.removeAttribute('muted');
-                
-                video.setAttribute('controls', '');
-                video.controls = true;
-                
-                video.setAttribute('preload', 'metadata');
-                video.preload = "metadata";
-            } else {
-                video.loop = true;
-                video.muted = true;
-                video.setAttribute('muted', ''); 
-                video.removeAttribute('controls');
-                video.controls = false;
-                video.setAttribute('preload', 'metadata');
-                video.preload = "auto";
-                video.play().catch(() => {});
-            }
-        }
+        video.preload = 'metadata';
 
-        configureVideoBehavior();
-
+        // Pause other videos when one starts playing
         video.addEventListener('play', () => {
-            if (!isMobile()) return;
-
             document.querySelectorAll('.video-3d').forEach((otherVideo) => {
                 if (otherVideo !== video && !otherVideo.paused) {
                     otherVideo.pause();
@@ -192,17 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         container.addEventListener('click', (e) => {
-            if (!isMobile()) return;
             e.stopPropagation();
         });
-
-        let lastWidth = window.innerWidth;
-        window.addEventListener('resize', () => {
-            if (window.innerWidth !== lastWidth) {
-                lastWidth = window.innerWidth;
-                configureVideoBehavior();
-            }
-        }, { passive: true });
     });
 
     // Accordion Dropdowns
