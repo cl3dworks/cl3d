@@ -4,47 +4,37 @@
     <head>
         <meta charset="utf-8">
         <meta content="initial-scale=1, width=device-width" name="viewport">
+        <meta name="description" content="Selected 3D and 2D artwork by Christopher Lim, a Philippine-based artist specializing in modeling, texturing, compositing, rendering, character design, and environment illustration.">
+        <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cl3dworks.github.io; media-src 'self' blob: https://cl3dworks.github.io; connect-src 'self' https://cl3dworks.github.io; object-src 'none';">
-        <link href="static/CLLOGO_transparent.png" rel="icon" type="image/png">
-        <title>CL3D Works</title>
+        <link rel="canonical" href="https://cl3dworks.github.io/cl3d/">
+        <link href="static/optimized/logo-icon-64.png" rel="icon" type="image/png">
+        <title>Christopher Lim | 3D &amp; 2D Artist Portfolio</title>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Christopher Lim | 3D &amp; 2D Artist Portfolio">
+        <meta property="og:description" content="Explore selected 3D and 2D artwork by Christopher Lim, including environments, product renders, and animation.">
+        <meta property="og:url" content="https://cl3dworks.github.io/cl3d/">
+        <meta property="og:image" content="https://cl3dworks.github.io/cl3d/static/post_outbreak/A_01.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;800&display=swap" rel="stylesheet">
         <link href="static/style.css" rel="stylesheet">
         <script defer src="static/script.js"></script>
     </head>
     <body>
-        <div id="portfolio-cinematic-loader">
-            <div class="loader-branding-frame">
-                <h2 class="loader-brand-title">CL3D</h2>
-                <p class="loader-brand-subtitle">INITIALIZING WORKSPACE</p>
-                <div class="progress-bar-track">
-                    <div id="loader-progress-fill"></div>
-                </div>
-                <div class="loader-status-metrics">
-                    <span id="loader-percentage-counter">0%</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- <section id="landing-hero">
-            <div class="landing-sticky-frame">
-                <video id="hero-scrub-video" muted playsinline preload="metadata" src="static/COFFEE_optimized.mp4"></video>
-                <div class="landing-titles">
-                    <h1>CL3D</h1>
-                    <p>Take a quick scroll through the workspace to see my works</p>
-                    <div class="scroll-arrow">&darr;</div>
-                </div>
-            </div>
-        </section> -->
-
         <div class="app-container" id="portfolio-workspace">
             <button aria-label="Toggle navigation menu" id="mobile-sidebar-toggle">
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
             </button>
-            <aside class="sidebar structural-hidden">
+            <aside class="sidebar structural-hidden" id="portfolio-sidebar">
                 <div class="sidebar-brand">
-                    <img alt="CL3D Logo" id="logo" src="static/CLLOGO_transparent.png">
+                    <picture>
+                        <source type="image/webp" srcset="static/optimized/logo-65.webp 65w, static/optimized/logo-130.webp 130w" sizes="65px">
+                        <img alt="CL3D Logo" height="65" id="logo" src="static/CLLOGO_transparent.png" width="65">
+                    </picture>
                 </div>
                 <nav class="sidebar-menu">
                     <div class="sidebar-about">
@@ -136,242 +126,245 @@
                 </nav>
             </aside>
             <main class="main-content">
-
+                <header class="portfolio-intro">
+                    <h1>3D &amp; 2D Artist Portfolio</h1>
+                    <p>Selected work by Christopher Lim, a Philippine-based artist creating 3D models, product renders, environments, and 2D artwork.</p>
+                </header>
                 <section class="content-body" id="project-post-outbreak">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_1_Compressed.mp4"></video>
+                        <video data-poster="static/optimized/posters/post_outbreak/RainyNight_Video_1_Compressed.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_1_Compressed.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/post_outbreak/A_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_09.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_10.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_01-480.webp 480w, static/optimized/post_outbreak/A_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 1" loading="lazy" data-full-src="static/post_outbreak/A_01.jpg" src="static/post_outbreak/A_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_02-480.webp 480w, static/optimized/post_outbreak/A_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 2" loading="lazy" data-full-src="static/post_outbreak/A_02.jpg" src="static/post_outbreak/A_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_03-480.webp 480w, static/optimized/post_outbreak/A_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 3" loading="lazy" data-full-src="static/post_outbreak/A_03.jpg" src="static/post_outbreak/A_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_04-480.webp 480w, static/optimized/post_outbreak/A_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 4" loading="lazy" data-full-src="static/post_outbreak/A_04.jpg" src="static/post_outbreak/A_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_05-480.webp 480w, static/optimized/post_outbreak/A_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 5" loading="lazy" data-full-src="static/post_outbreak/A_05.jpg" src="static/post_outbreak/A_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_06-480.webp 480w, static/optimized/post_outbreak/A_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 6" loading="lazy" data-full-src="static/post_outbreak/A_06.jpg" src="static/post_outbreak/A_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_07-480.webp 480w, static/optimized/post_outbreak/A_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 7" loading="lazy" data-full-src="static/post_outbreak/A_07.jpg" src="static/post_outbreak/A_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_08-480.webp 480w, static/optimized/post_outbreak/A_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 8" loading="lazy" data-full-src="static/post_outbreak/A_08.jpg" src="static/post_outbreak/A_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_09-480.webp 480w, static/optimized/post_outbreak/A_09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 9" loading="lazy" data-full-src="static/post_outbreak/A_09.jpg" src="static/post_outbreak/A_09.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_10-480.webp 480w, static/optimized/post_outbreak/A_10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 10" loading="lazy" data-full-src="static/post_outbreak/A_10.jpg" src="static/post_outbreak/A_10.jpg"></picture></div>
                     </div>
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_2_Compressed.mp4"></video>
+                        <video data-poster="static/optimized/posters/post_outbreak/RainyNight_Video_2_Compressed.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_2_Compressed.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_11.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_12.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/post_outbreak/A_13.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_14.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_15.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_16.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_17.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_18.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_19.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_11-480.webp 480w, static/optimized/post_outbreak/A_11-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 11" loading="lazy" data-full-src="static/post_outbreak/A_11.jpg" src="static/post_outbreak/A_11.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_12-480.webp 480w, static/optimized/post_outbreak/A_12-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 12" loading="lazy" data-full-src="static/post_outbreak/A_12.jpg" src="static/post_outbreak/A_12.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_13-480.webp 480w, static/optimized/post_outbreak/A_13-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 13" loading="lazy" data-full-src="static/post_outbreak/A_13.jpg" src="static/post_outbreak/A_13.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_14-480.webp 480w, static/optimized/post_outbreak/A_14-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 14" loading="lazy" data-full-src="static/post_outbreak/A_14.jpg" src="static/post_outbreak/A_14.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_15-480.webp 480w, static/optimized/post_outbreak/A_15-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 15" loading="lazy" data-full-src="static/post_outbreak/A_15.jpg" src="static/post_outbreak/A_15.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_16-480.webp 480w, static/optimized/post_outbreak/A_16-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 16" loading="lazy" data-full-src="static/post_outbreak/A_16.jpg" src="static/post_outbreak/A_16.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_17-480.webp 480w, static/optimized/post_outbreak/A_17-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 17" loading="lazy" data-full-src="static/post_outbreak/A_17.jpg" src="static/post_outbreak/A_17.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_18-480.webp 480w, static/optimized/post_outbreak/A_18-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 18" loading="lazy" data-full-src="static/post_outbreak/A_18.jpg" src="static/post_outbreak/A_18.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_19-480.webp 480w, static/optimized/post_outbreak/A_19-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 19" loading="lazy" data-full-src="static/post_outbreak/A_19.jpg" src="static/post_outbreak/A_19.jpg"></picture></div>
                     </div>
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_3_Compressed.mp4"></video>
+                        <video data-poster="static/optimized/posters/post_outbreak/RainyNight_Video_3_Compressed.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_3_Compressed.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_20.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_21.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/post_outbreak/A_22.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_23.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_24.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_25.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_26.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_27.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_28.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_20-480.webp 480w, static/optimized/post_outbreak/A_20-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 20" loading="lazy" data-full-src="static/post_outbreak/A_20.jpg" src="static/post_outbreak/A_20.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_21-480.webp 480w, static/optimized/post_outbreak/A_21-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 21" loading="lazy" data-full-src="static/post_outbreak/A_21.jpg" src="static/post_outbreak/A_21.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_22-480.webp 480w, static/optimized/post_outbreak/A_22-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 22" loading="lazy" data-full-src="static/post_outbreak/A_22.jpg" src="static/post_outbreak/A_22.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_23-480.webp 480w, static/optimized/post_outbreak/A_23-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 23" loading="lazy" data-full-src="static/post_outbreak/A_23.jpg" src="static/post_outbreak/A_23.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_24-480.webp 480w, static/optimized/post_outbreak/A_24-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 24" loading="lazy" data-full-src="static/post_outbreak/A_24.jpg" src="static/post_outbreak/A_24.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_25-480.webp 480w, static/optimized/post_outbreak/A_25-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 25" loading="lazy" data-full-src="static/post_outbreak/A_25.jpg" src="static/post_outbreak/A_25.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_26-480.webp 480w, static/optimized/post_outbreak/A_26-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 26" loading="lazy" data-full-src="static/post_outbreak/A_26.jpg" src="static/post_outbreak/A_26.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_27-480.webp 480w, static/optimized/post_outbreak/A_27-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 27" loading="lazy" data-full-src="static/post_outbreak/A_27.jpg" src="static/post_outbreak/A_27.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_28-480.webp 480w, static/optimized/post_outbreak/A_28-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 28" loading="lazy" data-full-src="static/post_outbreak/A_28.jpg" src="static/post_outbreak/A_28.jpg"></picture></div>
                     </div>
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_4_Compressed.mp4"></video>
+                        <video data-poster="static/optimized/posters/post_outbreak/RainyNight_Video_4_Compressed.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/post_outbreak/RainyNight_Video_4_Compressed.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">3D Post-outbreak</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_30.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/post_outbreak/A_31.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/post_outbreak/A_32.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_33.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_34.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_35.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_36.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_37.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/post_outbreak/A_38.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_30-480.webp 480w, static/optimized/post_outbreak/A_30-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 29" loading="lazy" data-full-src="static/post_outbreak/A_30.jpg" src="static/post_outbreak/A_30.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_31-480.webp 480w, static/optimized/post_outbreak/A_31-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 30" loading="lazy" data-full-src="static/post_outbreak/A_31.jpg" src="static/post_outbreak/A_31.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_32-480.webp 480w, static/optimized/post_outbreak/A_32-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 31" loading="lazy" data-full-src="static/post_outbreak/A_32.jpg" src="static/post_outbreak/A_32.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_33-480.webp 480w, static/optimized/post_outbreak/A_33-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 32" loading="lazy" data-full-src="static/post_outbreak/A_33.jpg" src="static/post_outbreak/A_33.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_34-480.webp 480w, static/optimized/post_outbreak/A_34-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 33" loading="lazy" data-full-src="static/post_outbreak/A_34.jpg" src="static/post_outbreak/A_34.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_35-480.webp 480w, static/optimized/post_outbreak/A_35-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 34" loading="lazy" data-full-src="static/post_outbreak/A_35.jpg" src="static/post_outbreak/A_35.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_36-480.webp 480w, static/optimized/post_outbreak/A_36-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 35" loading="lazy" data-full-src="static/post_outbreak/A_36.jpg" src="static/post_outbreak/A_36.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_37-480.webp 480w, static/optimized/post_outbreak/A_37-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 36" loading="lazy" data-full-src="static/post_outbreak/A_37.png" src="static/post_outbreak/A_37.png"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/post_outbreak/A_38-480.webp 480w, static/optimized/post_outbreak/A_38-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="3D Post-outbreak, project image 37" loading="lazy" data-full-src="static/post_outbreak/A_38.jpg" src="static/post_outbreak/A_38.jpg"></picture></div>
                     </div>
                 </section>
 
                 <section class="content-body" id="project-shrine">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/shrine/Compressed_Shrine.webm"></video>
+                        <video data-poster="static/optimized/posters/shrine/Compressed_Shrine.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/shrine/Compressed_Shrine.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Old Shrine Place in Unreal Engine</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/shrine/JPGimage00000000.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/shrine/JPGimage00000118.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/shrine/JPGimage00000256.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/shrine/JPGimage00000371.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/shrine/JPGimage00000488.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/shrine/JPGimage00000584.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000000-480.webp 480w, static/optimized/shrine/JPGimage00000000-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 1" loading="lazy" data-full-src="static/shrine/JPGimage00000000.jpg" src="static/shrine/JPGimage00000000.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000118-480.webp 480w, static/optimized/shrine/JPGimage00000118-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 2" loading="lazy" data-full-src="static/shrine/JPGimage00000118.jpg" src="static/shrine/JPGimage00000118.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000256-480.webp 480w, static/optimized/shrine/JPGimage00000256-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 3" loading="lazy" data-full-src="static/shrine/JPGimage00000256.jpg" src="static/shrine/JPGimage00000256.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000371-480.webp 480w, static/optimized/shrine/JPGimage00000371-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 4" loading="lazy" data-full-src="static/shrine/JPGimage00000371.jpg" src="static/shrine/JPGimage00000371.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000488-480.webp 480w, static/optimized/shrine/JPGimage00000488-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 5" loading="lazy" data-full-src="static/shrine/JPGimage00000488.jpg" src="static/shrine/JPGimage00000488.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/shrine/JPGimage00000584-480.webp 480w, static/optimized/shrine/JPGimage00000584-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Old Shrine Place in Unreal Engine, project image 6" loading="lazy" data-full-src="static/shrine/JPGimage00000584.jpg" src="static/shrine/JPGimage00000584.jpg"></picture></div>
                     </div>
                 </section>
 
                 <section class="content-body" id="project-island">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/island/island_vid.webm"></video>
+                        <video data-poster="static/optimized/posters/island/island_vid.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/island/island_vid.webm" width="1920" height="640"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Rocky Beach Island in Unreal Engine</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/island/01.webp"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/island/02.webp"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/island/03.webp"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/island/04.webp"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/island/05.webp"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/island/06.webp"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/island/01-480.webp 480w, static/optimized/island/01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 1" loading="lazy" data-full-src="static/island/01.webp" src="static/island/01.webp"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/island/02-480.webp 480w, static/optimized/island/02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 2" loading="lazy" data-full-src="static/island/02.webp" src="static/island/02.webp"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/island/03-480.webp 480w, static/optimized/island/03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 3" loading="lazy" data-full-src="static/island/03.webp" src="static/island/03.webp"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/island/04-480.webp 480w, static/optimized/island/04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 4" loading="lazy" data-full-src="static/island/04.webp" src="static/island/04.webp"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/island/05-480.webp 480w, static/optimized/island/05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 5" loading="lazy" data-full-src="static/island/05.webp" src="static/island/05.webp"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/island/06-480.webp 480w, static/optimized/island/06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rocky Beach Island in Unreal Engine, project image 6" loading="lazy" data-full-src="static/island/06.webp" src="static/island/06.webp"></picture></div>
                     </div>
                 </section>
                 
                 <section class="content-body" id="project-mountain">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/video_LARGE_SCALE_LANDSCAPE0001-0374.webm"></video>
+                        <video data-poster="static/optimized/posters/environment/video_LARGE_SCALE_LANDSCAPE0001-0374.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/video_LARGE_SCALE_LANDSCAPE0001-0374.webm" width="1920" height="676"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Mountain Landscape</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/environment/LARGE_SCALE_LANDSCAPE_COMPRESSED.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/environment/LARGE_SCALE_LANDSCAPE_COMPRESSED-480.webp 480w, static/optimized/environment/LARGE_SCALE_LANDSCAPE_COMPRESSED-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Mountain Landscape, project image 1" loading="lazy" data-full-src="static/environment/LARGE_SCALE_LANDSCAPE_COMPRESSED.jpg" src="static/environment/LARGE_SCALE_LANDSCAPE_COMPRESSED.jpg"></picture></div>
                     </div>
                 </section>
 
                 <section class="content-body" id="project-monitor">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/monitor/monitor_mount.webm"></video>
+                        <video data-poster="static/optimized/posters/monitor/monitor_mount.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/monitor/monitor_mount.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Dual Monitor Mount</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/monitor/A01_HUANUO.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/monitor/A02_HUANUO.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/monitor/A03_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A04_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A05_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A06_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A07_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A08_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A09_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A10_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A11_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A12_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A13_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A14_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A15_HUANUO.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/monitor/A16_HUANUO.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/monitor/A01_HUANUO-480.webp 480w, static/optimized/monitor/A01_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 1" loading="lazy" data-full-src="static/monitor/A01_HUANUO.jpg" src="static/monitor/A01_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/monitor/A02_HUANUO-480.webp 480w, static/optimized/monitor/A02_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 2" loading="lazy" data-full-src="static/monitor/A02_HUANUO.jpg" src="static/monitor/A02_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/monitor/A03_HUANUO-480.webp 480w, static/optimized/monitor/A03_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 3" loading="lazy" data-full-src="static/monitor/A03_HUANUO.jpg" src="static/monitor/A03_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A04_HUANUO-480.webp 480w, static/optimized/monitor/A04_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 4" loading="lazy" data-full-src="static/monitor/A04_HUANUO.jpg" src="static/monitor/A04_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A05_HUANUO-480.webp 480w, static/optimized/monitor/A05_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 5" loading="lazy" data-full-src="static/monitor/A05_HUANUO.jpg" src="static/monitor/A05_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A06_HUANUO-480.webp 480w, static/optimized/monitor/A06_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 6" loading="lazy" data-full-src="static/monitor/A06_HUANUO.jpg" src="static/monitor/A06_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A07_HUANUO-480.webp 480w, static/optimized/monitor/A07_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 7" loading="lazy" data-full-src="static/monitor/A07_HUANUO.jpg" src="static/monitor/A07_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A08_HUANUO-480.webp 480w, static/optimized/monitor/A08_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 8" loading="lazy" data-full-src="static/monitor/A08_HUANUO.jpg" src="static/monitor/A08_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A09_HUANUO-480.webp 480w, static/optimized/monitor/A09_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 9" loading="lazy" data-full-src="static/monitor/A09_HUANUO.jpg" src="static/monitor/A09_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A10_HUANUO-480.webp 480w, static/optimized/monitor/A10_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 10" loading="lazy" data-full-src="static/monitor/A10_HUANUO.jpg" src="static/monitor/A10_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A11_HUANUO-480.webp 480w, static/optimized/monitor/A11_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 11" loading="lazy" data-full-src="static/monitor/A11_HUANUO.jpg" src="static/monitor/A11_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A12_HUANUO-480.webp 480w, static/optimized/monitor/A12_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 12" loading="lazy" data-full-src="static/monitor/A12_HUANUO.jpg" src="static/monitor/A12_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A13_HUANUO-480.webp 480w, static/optimized/monitor/A13_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 13" loading="lazy" data-full-src="static/monitor/A13_HUANUO.jpg" src="static/monitor/A13_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A14_HUANUO-480.webp 480w, static/optimized/monitor/A14_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 14" loading="lazy" data-full-src="static/monitor/A14_HUANUO.jpg" src="static/monitor/A14_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A15_HUANUO-480.webp 480w, static/optimized/monitor/A15_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 15" loading="lazy" data-full-src="static/monitor/A15_HUANUO.jpg" src="static/monitor/A15_HUANUO.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/monitor/A16_HUANUO-480.webp 480w, static/optimized/monitor/A16_HUANUO-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Dual Monitor Mount, project image 16" loading="lazy" data-full-src="static/monitor/A16_HUANUO.jpg" src="static/monitor/A16_HUANUO.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-watch">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/watch/Watch_Video_Full0001-1080.webm"></video>
+                        <video data-poster="static/optimized/posters/watch/Watch_Video_Full0001-1080.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/watch/Watch_Video_Full0001-1080.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Sports Watch</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/watch/Watch_Mockup_09.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/watch/Watch_Mockup_03.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/watch/Watch_Mockup_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_10.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_11.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/watch/Watch_Mockup_12.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_09-480.webp 480w, static/optimized/watch/Watch_Mockup_09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 1" loading="lazy" data-full-src="static/watch/Watch_Mockup_09.jpg" src="static/watch/Watch_Mockup_09.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_03-480.webp 480w, static/optimized/watch/Watch_Mockup_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 2" loading="lazy" data-full-src="static/watch/Watch_Mockup_03.jpg" src="static/watch/Watch_Mockup_03.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_01-480.webp 480w, static/optimized/watch/Watch_Mockup_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 3" loading="lazy" data-full-src="static/watch/Watch_Mockup_01.jpg" src="static/watch/Watch_Mockup_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_02-480.webp 480w, static/optimized/watch/Watch_Mockup_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 4" loading="lazy" data-full-src="static/watch/Watch_Mockup_02.jpg" src="static/watch/Watch_Mockup_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_04-480.webp 480w, static/optimized/watch/Watch_Mockup_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 5" loading="lazy" data-full-src="static/watch/Watch_Mockup_04.jpg" src="static/watch/Watch_Mockup_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_05-480.webp 480w, static/optimized/watch/Watch_Mockup_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 6" loading="lazy" data-full-src="static/watch/Watch_Mockup_05.jpg" src="static/watch/Watch_Mockup_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_06-480.webp 480w, static/optimized/watch/Watch_Mockup_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 7" loading="lazy" data-full-src="static/watch/Watch_Mockup_06.jpg" src="static/watch/Watch_Mockup_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_07-480.webp 480w, static/optimized/watch/Watch_Mockup_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 8" loading="lazy" data-full-src="static/watch/Watch_Mockup_07.jpg" src="static/watch/Watch_Mockup_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_08-480.webp 480w, static/optimized/watch/Watch_Mockup_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 9" loading="lazy" data-full-src="static/watch/Watch_Mockup_08.jpg" src="static/watch/Watch_Mockup_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_10-480.webp 480w, static/optimized/watch/Watch_Mockup_10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 10" loading="lazy" data-full-src="static/watch/Watch_Mockup_10.jpg" src="static/watch/Watch_Mockup_10.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_11-480.webp 480w, static/optimized/watch/Watch_Mockup_11-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 11" loading="lazy" data-full-src="static/watch/Watch_Mockup_11.jpg" src="static/watch/Watch_Mockup_11.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/watch/Watch_Mockup_12-480.webp 480w, static/optimized/watch/Watch_Mockup_12-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Sports Watch, project image 12" loading="lazy" data-full-src="static/watch/Watch_Mockup_12.jpg" src="static/watch/Watch_Mockup_12.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-mic">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/mic/Takstar_Vid_Compressed20001-1013.webm"></video>
+                        <video data-poster="static/optimized/posters/mic/Takstar_Vid_Compressed20001-1013.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/mic/Takstar_Vid_Compressed20001-1013.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Shotgun Microphone</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/mic/Takstar_Cycles_main1.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/mic/Takstar_Cycles_main2.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/mic/Takstar_Cycles_main3.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Cycles_main4.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Cycles_main5.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Cycles_main6.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/mic/Takstar_Secondary_06.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main1-480.webp 480w, static/optimized/mic/Takstar_Cycles_main1-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 1" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main1.jpg" src="static/mic/Takstar_Cycles_main1.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main2-480.webp 480w, static/optimized/mic/Takstar_Cycles_main2-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 2" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main2.jpg" src="static/mic/Takstar_Cycles_main2.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main3-480.webp 480w, static/optimized/mic/Takstar_Cycles_main3-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 3" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main3.jpg" src="static/mic/Takstar_Cycles_main3.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main4-480.webp 480w, static/optimized/mic/Takstar_Cycles_main4-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 4" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main4.jpg" src="static/mic/Takstar_Cycles_main4.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main5-480.webp 480w, static/optimized/mic/Takstar_Cycles_main5-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 5" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main5.jpg" src="static/mic/Takstar_Cycles_main5.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Cycles_main6-480.webp 480w, static/optimized/mic/Takstar_Cycles_main6-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 6" loading="lazy" data-full-src="static/mic/Takstar_Cycles_main6.jpg" src="static/mic/Takstar_Cycles_main6.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_01-480.webp 480w, static/optimized/mic/Takstar_Secondary_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 7" loading="lazy" data-full-src="static/mic/Takstar_Secondary_01.jpg" src="static/mic/Takstar_Secondary_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_02-480.webp 480w, static/optimized/mic/Takstar_Secondary_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 8" loading="lazy" data-full-src="static/mic/Takstar_Secondary_02.jpg" src="static/mic/Takstar_Secondary_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_03-480.webp 480w, static/optimized/mic/Takstar_Secondary_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 9" loading="lazy" data-full-src="static/mic/Takstar_Secondary_03.jpg" src="static/mic/Takstar_Secondary_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_04-480.webp 480w, static/optimized/mic/Takstar_Secondary_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 10" loading="lazy" data-full-src="static/mic/Takstar_Secondary_04.jpg" src="static/mic/Takstar_Secondary_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_05-480.webp 480w, static/optimized/mic/Takstar_Secondary_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 11" loading="lazy" data-full-src="static/mic/Takstar_Secondary_05.jpg" src="static/mic/Takstar_Secondary_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/mic/Takstar_Secondary_06-480.webp 480w, static/optimized/mic/Takstar_Secondary_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Shotgun Microphone, project image 12" loading="lazy" data-full-src="static/mic/Takstar_Secondary_06.jpg" src="static/mic/Takstar_Secondary_06.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-headphones">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/headphones/Headphones_Video_Compressed10001-1081.webm"></video>
+                        <video data-poster="static/optimized/posters/headphones/Headphones_Video_Compressed10001-1081.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/headphones/Headphones_Video_Compressed10001-1081.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Headphones</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/headphones/Headphones_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/headphones/Headphones_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/headphones/Headphones_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_5x5_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_Last01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/headphones/Headphones_Last02.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_01-480.webp 480w, static/optimized/headphones/Headphones_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 1" loading="lazy" data-full-src="static/headphones/Headphones_01.jpg" src="static/headphones/Headphones_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_02-480.webp 480w, static/optimized/headphones/Headphones_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 2" loading="lazy" data-full-src="static/headphones/Headphones_02.jpg" src="static/headphones/Headphones_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_03-480.webp 480w, static/optimized/headphones/Headphones_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 3" loading="lazy" data-full-src="static/headphones/Headphones_03.jpg" src="static/headphones/Headphones_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_04-480.webp 480w, static/optimized/headphones/Headphones_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 4" loading="lazy" data-full-src="static/headphones/Headphones_04.jpg" src="static/headphones/Headphones_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_01-480.webp 480w, static/optimized/headphones/Headphones_5x5_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 5" loading="lazy" data-full-src="static/headphones/Headphones_5x5_01.jpg" src="static/headphones/Headphones_5x5_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_02-480.webp 480w, static/optimized/headphones/Headphones_5x5_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 6" loading="lazy" data-full-src="static/headphones/Headphones_5x5_02.jpg" src="static/headphones/Headphones_5x5_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_03-480.webp 480w, static/optimized/headphones/Headphones_5x5_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 7" loading="lazy" data-full-src="static/headphones/Headphones_5x5_03.jpg" src="static/headphones/Headphones_5x5_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_04-480.webp 480w, static/optimized/headphones/Headphones_5x5_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 8" loading="lazy" data-full-src="static/headphones/Headphones_5x5_04.jpg" src="static/headphones/Headphones_5x5_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_05-480.webp 480w, static/optimized/headphones/Headphones_5x5_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 9" loading="lazy" data-full-src="static/headphones/Headphones_5x5_05.jpg" src="static/headphones/Headphones_5x5_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_06-480.webp 480w, static/optimized/headphones/Headphones_5x5_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 10" loading="lazy" data-full-src="static/headphones/Headphones_5x5_06.jpg" src="static/headphones/Headphones_5x5_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_07-480.webp 480w, static/optimized/headphones/Headphones_5x5_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 11" loading="lazy" data-full-src="static/headphones/Headphones_5x5_07.jpg" src="static/headphones/Headphones_5x5_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_5x5_08-480.webp 480w, static/optimized/headphones/Headphones_5x5_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 12" loading="lazy" data-full-src="static/headphones/Headphones_5x5_08.jpg" src="static/headphones/Headphones_5x5_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_Last01-480.webp 480w, static/optimized/headphones/Headphones_Last01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 13" loading="lazy" data-full-src="static/headphones/Headphones_Last01.jpg" src="static/headphones/Headphones_Last01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/headphones/Headphones_Last02-480.webp 480w, static/optimized/headphones/Headphones_Last02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Headphones, project image 14" loading="lazy" data-full-src="static/headphones/Headphones_Last02.jpg" src="static/headphones/Headphones_Last02.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-emerald">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/emerald/SOUND_EMERALD_VIDEO.webm"></video>
+                        <video data-poster="static/optimized/posters/emerald/SOUND_EMERALD_VIDEO.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/emerald/SOUND_EMERALD_VIDEO.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Jade</h2>
                     </div>
                         <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/emerald/JADE_COMPRESSED_06.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_01-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 1" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_01.jpg" src="static/emerald/JADE_COMPRESSED_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_02-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 2" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_02.jpg" src="static/emerald/JADE_COMPRESSED_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_03-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 3" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_03.jpg" src="static/emerald/JADE_COMPRESSED_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_04-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 4" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_04.jpg" src="static/emerald/JADE_COMPRESSED_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_05-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 5" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_05.jpg" src="static/emerald/JADE_COMPRESSED_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/emerald/JADE_COMPRESSED_06-480.webp 480w, static/optimized/emerald/JADE_COMPRESSED_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Jade, project image 6" loading="lazy" data-full-src="static/emerald/JADE_COMPRESSED_06.jpg" src="static/emerald/JADE_COMPRESSED_06.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-ivory">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/ivory/SOUND_IVORY_VIDEO_COMRESSED.webm"></video>
+                        <video data-poster="static/optimized/posters/ivory/SOUND_IVORY_VIDEO_COMRESSED.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/ivory/SOUND_IVORY_VIDEO_COMRESSED.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Ivory</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_00.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_01.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ivory/IVORY_COMPRESSED_07.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_00-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_00-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 1" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_00.jpg" src="static/ivory/IVORY_COMPRESSED_00.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_01-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 2" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_01.jpg" src="static/ivory/IVORY_COMPRESSED_01.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_02-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 3" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_02.jpg" src="static/ivory/IVORY_COMPRESSED_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_03-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 4" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_03.jpg" src="static/ivory/IVORY_COMPRESSED_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_04-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 5" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_04.jpg" src="static/ivory/IVORY_COMPRESSED_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_05-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 6" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_05.jpg" src="static/ivory/IVORY_COMPRESSED_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_06-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 7" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_06.jpg" src="static/ivory/IVORY_COMPRESSED_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ivory/IVORY_COMPRESSED_07-480.webp 480w, static/optimized/ivory/IVORY_COMPRESSED_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ivory, project image 8" loading="lazy" data-full-src="static/ivory/IVORY_COMPRESSED_07.jpg" src="static/ivory/IVORY_COMPRESSED_07.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-ocean">
@@ -379,11 +372,11 @@
                         <h2 class="active-project-title">Ocean</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/ocean/OCEAN_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/ocean/OCEAN_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/ocean/OCEAN_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ocean/OCEAN_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/ocean/OCEAN_05.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/ocean/OCEAN_01-480.webp 480w, static/optimized/ocean/OCEAN_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ocean, project image 1" loading="lazy" data-full-src="static/ocean/OCEAN_01.jpg" src="static/ocean/OCEAN_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/ocean/OCEAN_02-480.webp 480w, static/optimized/ocean/OCEAN_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ocean, project image 2" loading="lazy" data-full-src="static/ocean/OCEAN_02.jpg" src="static/ocean/OCEAN_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/ocean/OCEAN_03-480.webp 480w, static/optimized/ocean/OCEAN_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ocean, project image 3" loading="lazy" data-full-src="static/ocean/OCEAN_03.jpg" src="static/ocean/OCEAN_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ocean/OCEAN_04-480.webp 480w, static/optimized/ocean/OCEAN_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ocean, project image 4" loading="lazy" data-full-src="static/ocean/OCEAN_04.jpg" src="static/ocean/OCEAN_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/ocean/OCEAN_05-480.webp 480w, static/optimized/ocean/OCEAN_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Ocean, project image 5" loading="lazy" data-full-src="static/ocean/OCEAN_05.jpg" src="static/ocean/OCEAN_05.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-rose">
@@ -391,153 +384,153 @@
                         <h2 class="active-project-title">Rose</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/rose/ROSE_COMPRESSED_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/rose/ROSE_COMPRESSED_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/rose/ROSE_COMPRESSED_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/rose/ROSE_COMPRESSED_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/rose/ROSE_COMPRESSED_05.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/rose/ROSE_COMPRESSED_01-480.webp 480w, static/optimized/rose/ROSE_COMPRESSED_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rose, project image 1" loading="lazy" data-full-src="static/rose/ROSE_COMPRESSED_01.jpg" src="static/rose/ROSE_COMPRESSED_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/rose/ROSE_COMPRESSED_02-480.webp 480w, static/optimized/rose/ROSE_COMPRESSED_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rose, project image 2" loading="lazy" data-full-src="static/rose/ROSE_COMPRESSED_02.jpg" src="static/rose/ROSE_COMPRESSED_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/rose/ROSE_COMPRESSED_03-480.webp 480w, static/optimized/rose/ROSE_COMPRESSED_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rose, project image 3" loading="lazy" data-full-src="static/rose/ROSE_COMPRESSED_03.jpg" src="static/rose/ROSE_COMPRESSED_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/rose/ROSE_COMPRESSED_04-480.webp 480w, static/optimized/rose/ROSE_COMPRESSED_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rose, project image 4" loading="lazy" data-full-src="static/rose/ROSE_COMPRESSED_04.jpg" src="static/rose/ROSE_COMPRESSED_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/rose/ROSE_COMPRESSED_05-480.webp 480w, static/optimized/rose/ROSE_COMPRESSED_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rose, project image 5" loading="lazy" data-full-src="static/rose/ROSE_COMPRESSED_05.jpg" src="static/rose/ROSE_COMPRESSED_05.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-perfume">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/perfume/PERFUME_VIDEO_COMPRESSED.webm"></video>
+                        <video data-poster="static/optimized/posters/perfume/PERFUME_VIDEO_COMPRESSED.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/perfume/PERFUME_VIDEO_COMPRESSED.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Perfume</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/perfume/perfume_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/perfume/perfume_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/perfume/perfume_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/perfume/perfume_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/perfume/perfume_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/perfume/perfume_06.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_01-480.webp 480w, static/optimized/perfume/perfume_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 1" loading="lazy" data-full-src="static/perfume/perfume_01.jpg" src="static/perfume/perfume_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_02-480.webp 480w, static/optimized/perfume/perfume_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 2" loading="lazy" data-full-src="static/perfume/perfume_02.jpg" src="static/perfume/perfume_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_03-480.webp 480w, static/optimized/perfume/perfume_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 3" loading="lazy" data-full-src="static/perfume/perfume_03.jpg" src="static/perfume/perfume_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_04-480.webp 480w, static/optimized/perfume/perfume_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 4" loading="lazy" data-full-src="static/perfume/perfume_04.jpg" src="static/perfume/perfume_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_05-480.webp 480w, static/optimized/perfume/perfume_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 5" loading="lazy" data-full-src="static/perfume/perfume_05.jpg" src="static/perfume/perfume_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/perfume/perfume_06-480.webp 480w, static/optimized/perfume/perfume_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Perfume, project image 6" loading="lazy" data-full-src="static/perfume/perfume_06.jpg" src="static/perfume/perfume_06.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-coffee">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/coffee/coffeeVid.webm"></video>
+                        <video data-poster="static/optimized/posters/coffee/coffeeVid.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/coffee/coffeeVid.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Coffee Bean</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/coffee/Coffee_Cycles08.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/coffee/Coffee_Cycles07.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/coffee/Coffee_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles09.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles10.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles11.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles12.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles13.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles14.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles15.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles16.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles17.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/coffee/Coffee_Cycles18.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles08-480.webp 480w, static/optimized/coffee/Coffee_Cycles08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 1" loading="lazy" data-full-src="static/coffee/Coffee_Cycles08.jpg" src="static/coffee/Coffee_Cycles08.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles07-480.webp 480w, static/optimized/coffee/Coffee_Cycles07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 2" loading="lazy" data-full-src="static/coffee/Coffee_Cycles07.jpg" src="static/coffee/Coffee_Cycles07.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_04-480.webp 480w, static/optimized/coffee/Coffee_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 3" loading="lazy" data-full-src="static/coffee/Coffee_04.jpg" src="static/coffee/Coffee_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_03-480.webp 480w, static/optimized/coffee/Coffee_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 4" loading="lazy" data-full-src="static/coffee/Coffee_03.jpg" src="static/coffee/Coffee_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_05-480.webp 480w, static/optimized/coffee/Coffee_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 5" loading="lazy" data-full-src="static/coffee/Coffee_05.jpg" src="static/coffee/Coffee_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles06-480.webp 480w, static/optimized/coffee/Coffee_Cycles06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 6" loading="lazy" data-full-src="static/coffee/Coffee_Cycles06.jpg" src="static/coffee/Coffee_Cycles06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_02-480.webp 480w, static/optimized/coffee/Coffee_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 7" loading="lazy" data-full-src="static/coffee/Coffee_02.jpg" src="static/coffee/Coffee_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_01-480.webp 480w, static/optimized/coffee/Coffee_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 8" loading="lazy" data-full-src="static/coffee/Coffee_01.jpg" src="static/coffee/Coffee_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles09-480.webp 480w, static/optimized/coffee/Coffee_Cycles09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 9" loading="lazy" data-full-src="static/coffee/Coffee_Cycles09.jpg" src="static/coffee/Coffee_Cycles09.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles10-480.webp 480w, static/optimized/coffee/Coffee_Cycles10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 10" loading="lazy" data-full-src="static/coffee/Coffee_Cycles10.jpg" src="static/coffee/Coffee_Cycles10.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles11-480.webp 480w, static/optimized/coffee/Coffee_Cycles11-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 11" loading="lazy" data-full-src="static/coffee/Coffee_Cycles11.jpg" src="static/coffee/Coffee_Cycles11.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles12-480.webp 480w, static/optimized/coffee/Coffee_Cycles12-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 12" loading="lazy" data-full-src="static/coffee/Coffee_Cycles12.jpg" src="static/coffee/Coffee_Cycles12.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles13-480.webp 480w, static/optimized/coffee/Coffee_Cycles13-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 13" loading="lazy" data-full-src="static/coffee/Coffee_Cycles13.jpg" src="static/coffee/Coffee_Cycles13.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles14-480.webp 480w, static/optimized/coffee/Coffee_Cycles14-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 14" loading="lazy" data-full-src="static/coffee/Coffee_Cycles14.jpg" src="static/coffee/Coffee_Cycles14.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles15-480.webp 480w, static/optimized/coffee/Coffee_Cycles15-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 15" loading="lazy" data-full-src="static/coffee/Coffee_Cycles15.jpg" src="static/coffee/Coffee_Cycles15.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles16-480.webp 480w, static/optimized/coffee/Coffee_Cycles16-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 16" loading="lazy" data-full-src="static/coffee/Coffee_Cycles16.jpg" src="static/coffee/Coffee_Cycles16.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles17-480.webp 480w, static/optimized/coffee/Coffee_Cycles17-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 17" loading="lazy" data-full-src="static/coffee/Coffee_Cycles17.jpg" src="static/coffee/Coffee_Cycles17.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/coffee/Coffee_Cycles18-480.webp 480w, static/optimized/coffee/Coffee_Cycles18-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Coffee Bean, project image 18" loading="lazy" data-full-src="static/coffee/Coffee_Cycles18.jpg" src="static/coffee/Coffee_Cycles18.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-pizza">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/pizza/PiZZA_Video_Compressed_FULL0001-0338.webm"></video>
+                        <video data-poster="static/optimized/posters/pizza/PiZZA_Video_Compressed_FULL0001-0338.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/pizza/PiZZA_Video_Compressed_FULL0001-0338.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Pizza</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/pizza/BOXPIZZA1.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/pizza/BOXPIZZA2.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/pizza/BOXPIZZA3.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/pizza/BOXPIZZA4.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/pizza/BOXPIZZA5.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/pizza/BOXPIZZA6.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/pizza/BOXPIZZA7.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/pizza/BOXPIZZA8.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA1-480.webp 480w, static/optimized/pizza/BOXPIZZA1-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 1" loading="lazy" data-full-src="static/pizza/BOXPIZZA1.jpg" src="static/pizza/BOXPIZZA1.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA2-480.webp 480w, static/optimized/pizza/BOXPIZZA2-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 2" loading="lazy" data-full-src="static/pizza/BOXPIZZA2.jpg" src="static/pizza/BOXPIZZA2.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA3-480.webp 480w, static/optimized/pizza/BOXPIZZA3-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 3" loading="lazy" data-full-src="static/pizza/BOXPIZZA3.jpg" src="static/pizza/BOXPIZZA3.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA4-480.webp 480w, static/optimized/pizza/BOXPIZZA4-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 4" loading="lazy" data-full-src="static/pizza/BOXPIZZA4.jpg" src="static/pizza/BOXPIZZA4.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA5-480.webp 480w, static/optimized/pizza/BOXPIZZA5-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 5" loading="lazy" data-full-src="static/pizza/BOXPIZZA5.jpg" src="static/pizza/BOXPIZZA5.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA6-480.webp 480w, static/optimized/pizza/BOXPIZZA6-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 6" loading="lazy" data-full-src="static/pizza/BOXPIZZA6.jpg" src="static/pizza/BOXPIZZA6.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA7-480.webp 480w, static/optimized/pizza/BOXPIZZA7-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 7" loading="lazy" data-full-src="static/pizza/BOXPIZZA7.jpg" src="static/pizza/BOXPIZZA7.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/pizza/BOXPIZZA8-480.webp 480w, static/optimized/pizza/BOXPIZZA8-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Pizza, project image 8" loading="lazy" data-full-src="static/pizza/BOXPIZZA8.jpg" src="static/pizza/BOXPIZZA8.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-bev">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/wine/WINE_Demo1_ChristopherLim.mp4"></video>
+                        <video data-poster="static/optimized/posters/wine/WINE_Demo1_ChristopherLim.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/wine/WINE_Demo1_ChristopherLim.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Beverage</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/wine/WINE_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/wine/WINE_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/wine/WINE_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/wine/WINE_04.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/wine/WINE_01-480.webp 480w, static/optimized/wine/WINE_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Beverage, project image 1" loading="lazy" data-full-src="static/wine/WINE_01.jpg" src="static/wine/WINE_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/wine/WINE_02-480.webp 480w, static/optimized/wine/WINE_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Beverage, project image 2" loading="lazy" data-full-src="static/wine/WINE_02.jpg" src="static/wine/WINE_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/wine/WINE_03-480.webp 480w, static/optimized/wine/WINE_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Beverage, project image 3" loading="lazy" data-full-src="static/wine/WINE_03.jpg" src="static/wine/WINE_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/wine/WINE_04-480.webp 480w, static/optimized/wine/WINE_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Beverage, project image 4" loading="lazy" data-full-src="static/wine/WINE_04.jpg" src="static/wine/WINE_04.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-jeep">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/jeep/Jeepney_Video_Compressed10001-1440.webm"></video>
+                        <video data-poster="static/optimized/posters/jeep/Jeepney_Video_Compressed10001-1440.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/jeep/Jeepney_Video_Compressed10001-1440.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Philippine Jeepney</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/jeep/01_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/jeep/02_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/jeep/03_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/04_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/05_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/06_JEEPNEY_COMPRESSED_MAIN.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_EXTERIOR_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_WIP1.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_WIP2.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_WIP3.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/JEEP_WIP4.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_09.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_10.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_11.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/Square_12.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/WIP_GRID_01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/WIP_GRID_02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/jeep/WIP_GRID_03.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/jeep/01_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/01_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 1" loading="lazy" data-full-src="static/jeep/01_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/01_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/jeep/02_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/02_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 2" loading="lazy" data-full-src="static/jeep/02_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/02_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/jeep/03_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/03_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 3" loading="lazy" data-full-src="static/jeep/03_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/03_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/04_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/04_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 4" loading="lazy" data-full-src="static/jeep/04_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/04_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/05_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/05_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 5" loading="lazy" data-full-src="static/jeep/05_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/05_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/06_JEEPNEY_COMPRESSED_MAIN-480.webp 480w, static/optimized/jeep/06_JEEPNEY_COMPRESSED_MAIN-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 6" loading="lazy" data-full-src="static/jeep/06_JEEPNEY_COMPRESSED_MAIN.jpg" src="static/jeep/06_JEEPNEY_COMPRESSED_MAIN.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_01-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 7" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_01.jpg" src="static/jeep/JEEP_EXTERIOR_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_02-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 8" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_02.jpg" src="static/jeep/JEEP_EXTERIOR_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_03-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 9" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_03.jpg" src="static/jeep/JEEP_EXTERIOR_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_04-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 10" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_04.jpg" src="static/jeep/JEEP_EXTERIOR_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_05-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 11" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_05.jpg" src="static/jeep/JEEP_EXTERIOR_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_EXTERIOR_06-480.webp 480w, static/optimized/jeep/JEEP_EXTERIOR_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 12" loading="lazy" data-full-src="static/jeep/JEEP_EXTERIOR_06.jpg" src="static/jeep/JEEP_EXTERIOR_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_WIP1-480.webp 480w, static/optimized/jeep/JEEP_WIP1-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 13" loading="lazy" data-full-src="static/jeep/JEEP_WIP1.jpg" src="static/jeep/JEEP_WIP1.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_WIP2-480.webp 480w, static/optimized/jeep/JEEP_WIP2-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 14" loading="lazy" data-full-src="static/jeep/JEEP_WIP2.jpg" src="static/jeep/JEEP_WIP2.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_WIP3-480.webp 480w, static/optimized/jeep/JEEP_WIP3-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 15" loading="lazy" data-full-src="static/jeep/JEEP_WIP3.jpg" src="static/jeep/JEEP_WIP3.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/JEEP_WIP4-480.webp 480w, static/optimized/jeep/JEEP_WIP4-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 16" loading="lazy" data-full-src="static/jeep/JEEP_WIP4.jpg" src="static/jeep/JEEP_WIP4.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_01-480.webp 480w, static/optimized/jeep/Square_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 17" loading="lazy" data-full-src="static/jeep/Square_01.jpg" src="static/jeep/Square_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_02-480.webp 480w, static/optimized/jeep/Square_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 18" loading="lazy" data-full-src="static/jeep/Square_02.jpg" src="static/jeep/Square_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_03-480.webp 480w, static/optimized/jeep/Square_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 19" loading="lazy" data-full-src="static/jeep/Square_03.jpg" src="static/jeep/Square_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_04-480.webp 480w, static/optimized/jeep/Square_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 20" loading="lazy" data-full-src="static/jeep/Square_04.jpg" src="static/jeep/Square_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_05-480.webp 480w, static/optimized/jeep/Square_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 21" loading="lazy" data-full-src="static/jeep/Square_05.jpg" src="static/jeep/Square_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_06-480.webp 480w, static/optimized/jeep/Square_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 22" loading="lazy" data-full-src="static/jeep/Square_06.jpg" src="static/jeep/Square_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_07-480.webp 480w, static/optimized/jeep/Square_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 23" loading="lazy" data-full-src="static/jeep/Square_07.jpg" src="static/jeep/Square_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_08-480.webp 480w, static/optimized/jeep/Square_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 24" loading="lazy" data-full-src="static/jeep/Square_08.jpg" src="static/jeep/Square_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_09-480.webp 480w, static/optimized/jeep/Square_09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 25" loading="lazy" data-full-src="static/jeep/Square_09.jpg" src="static/jeep/Square_09.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_10-480.webp 480w, static/optimized/jeep/Square_10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 26" loading="lazy" data-full-src="static/jeep/Square_10.jpg" src="static/jeep/Square_10.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_11-480.webp 480w, static/optimized/jeep/Square_11-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 27" loading="lazy" data-full-src="static/jeep/Square_11.jpg" src="static/jeep/Square_11.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/Square_12-480.webp 480w, static/optimized/jeep/Square_12-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 28" loading="lazy" data-full-src="static/jeep/Square_12.jpg" src="static/jeep/Square_12.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/WIP_GRID_01-480.webp 480w, static/optimized/jeep/WIP_GRID_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 29" loading="lazy" data-full-src="static/jeep/WIP_GRID_01.jpg" src="static/jeep/WIP_GRID_01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/WIP_GRID_02-480.webp 480w, static/optimized/jeep/WIP_GRID_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 30" loading="lazy" data-full-src="static/jeep/WIP_GRID_02.jpg" src="static/jeep/WIP_GRID_02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/jeep/WIP_GRID_03-480.webp 480w, static/optimized/jeep/WIP_GRID_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Philippine Jeepney, project image 31" loading="lazy" data-full-src="static/jeep/WIP_GRID_03.jpg" src="static/jeep/WIP_GRID_03.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-fan">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/efan/EFAN_Video_Compressed0001-0405.webm"></video>
+                        <video data-poster="static/optimized/posters/efan/EFAN_Video_Compressed0001-0405.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/efan/EFAN_Video_Compressed0001-0405.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Worn-out Fan</h2>
                     </div>
                         <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/efan/Electricfan_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/efan/Electricfan_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/efan/Electricfan_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_09.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_10.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_Square01.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_Square02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_Square03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_Square04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/efan/Electricfan_Square05.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_01-480.webp 480w, static/optimized/efan/Electricfan_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 1" loading="lazy" data-full-src="static/efan/Electricfan_01.jpg" src="static/efan/Electricfan_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_02-480.webp 480w, static/optimized/efan/Electricfan_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 2" loading="lazy" data-full-src="static/efan/Electricfan_02.jpg" src="static/efan/Electricfan_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_03-480.webp 480w, static/optimized/efan/Electricfan_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 3" loading="lazy" data-full-src="static/efan/Electricfan_03.jpg" src="static/efan/Electricfan_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_04-480.webp 480w, static/optimized/efan/Electricfan_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 4" loading="lazy" data-full-src="static/efan/Electricfan_04.jpg" src="static/efan/Electricfan_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_05-480.webp 480w, static/optimized/efan/Electricfan_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 5" loading="lazy" data-full-src="static/efan/Electricfan_05.jpg" src="static/efan/Electricfan_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_06-480.webp 480w, static/optimized/efan/Electricfan_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 6" loading="lazy" data-full-src="static/efan/Electricfan_06.jpg" src="static/efan/Electricfan_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_07-480.webp 480w, static/optimized/efan/Electricfan_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 7" loading="lazy" data-full-src="static/efan/Electricfan_07.jpg" src="static/efan/Electricfan_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_08-480.webp 480w, static/optimized/efan/Electricfan_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 8" loading="lazy" data-full-src="static/efan/Electricfan_08.jpg" src="static/efan/Electricfan_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_09-480.webp 480w, static/optimized/efan/Electricfan_09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 9" loading="lazy" data-full-src="static/efan/Electricfan_09.jpg" src="static/efan/Electricfan_09.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_10-480.webp 480w, static/optimized/efan/Electricfan_10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 10" loading="lazy" data-full-src="static/efan/Electricfan_10.jpg" src="static/efan/Electricfan_10.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_Square01-480.webp 480w, static/optimized/efan/Electricfan_Square01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 11" loading="lazy" data-full-src="static/efan/Electricfan_Square01.jpg" src="static/efan/Electricfan_Square01.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_Square02-480.webp 480w, static/optimized/efan/Electricfan_Square02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 12" loading="lazy" data-full-src="static/efan/Electricfan_Square02.jpg" src="static/efan/Electricfan_Square02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_Square03-480.webp 480w, static/optimized/efan/Electricfan_Square03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 13" loading="lazy" data-full-src="static/efan/Electricfan_Square03.jpg" src="static/efan/Electricfan_Square03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_Square04-480.webp 480w, static/optimized/efan/Electricfan_Square04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 14" loading="lazy" data-full-src="static/efan/Electricfan_Square04.jpg" src="static/efan/Electricfan_Square04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/efan/Electricfan_Square05-480.webp 480w, static/optimized/efan/Electricfan_Square05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Worn-out Fan, project image 15" loading="lazy" data-full-src="static/efan/Electricfan_Square05.jpg" src="static/efan/Electricfan_Square05.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-bike">
@@ -545,83 +538,83 @@
                         <h2 class="active-project-title">Rusty Bike</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/bike/Bicycle_cycles00.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/bike/Bicycle_cycles01.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/bike/Bicycle_cycles02.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/bike/Bicycle_cycles08.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles00-480.webp 480w, static/optimized/bike/Bicycle_cycles00-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 1" loading="lazy" data-full-src="static/bike/Bicycle_cycles00.jpg" src="static/bike/Bicycle_cycles00.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles01-480.webp 480w, static/optimized/bike/Bicycle_cycles01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 2" loading="lazy" data-full-src="static/bike/Bicycle_cycles01.jpg" src="static/bike/Bicycle_cycles01.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles02-480.webp 480w, static/optimized/bike/Bicycle_cycles02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 3" loading="lazy" data-full-src="static/bike/Bicycle_cycles02.jpg" src="static/bike/Bicycle_cycles02.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles03-480.webp 480w, static/optimized/bike/Bicycle_cycles03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 4" loading="lazy" data-full-src="static/bike/Bicycle_cycles03.jpg" src="static/bike/Bicycle_cycles03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles04-480.webp 480w, static/optimized/bike/Bicycle_cycles04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 5" loading="lazy" data-full-src="static/bike/Bicycle_cycles04.jpg" src="static/bike/Bicycle_cycles04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles05-480.webp 480w, static/optimized/bike/Bicycle_cycles05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 6" loading="lazy" data-full-src="static/bike/Bicycle_cycles05.jpg" src="static/bike/Bicycle_cycles05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles06-480.webp 480w, static/optimized/bike/Bicycle_cycles06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 7" loading="lazy" data-full-src="static/bike/Bicycle_cycles06.jpg" src="static/bike/Bicycle_cycles06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles07-480.webp 480w, static/optimized/bike/Bicycle_cycles07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 8" loading="lazy" data-full-src="static/bike/Bicycle_cycles07.jpg" src="static/bike/Bicycle_cycles07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/bike/Bicycle_cycles08-480.webp 480w, static/optimized/bike/Bicycle_cycles08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Rusty Bike, project image 9" loading="lazy" data-full-src="static/bike/Bicycle_cycles08.jpg" src="static/bike/Bicycle_cycles08.jpg"></picture></div>
                     </div>
                 </section>
                 
                 <section class="content-body" id="project-eerie">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/horror_shorts/THE_HALLWAY0001-1190.webm"></video>
+                        <video data-poster="static/optimized/posters/horror_shorts/THE_HALLWAY0001-1190.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/horror_shorts/THE_HALLWAY0001-1190.webm" width="1080" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">The Hallway</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/horror_shorts/HALLWAY_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/horror_shorts/HALLWAY_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/horror_shorts/HALLWAY_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_05.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_06.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_07.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_08.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_09.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_10.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_11.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_12.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_13.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/HALLWAY_14.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_01-480.webp 480w, static/optimized/horror_shorts/HALLWAY_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 1" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_01.jpg" src="static/horror_shorts/HALLWAY_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_02-480.webp 480w, static/optimized/horror_shorts/HALLWAY_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 2" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_02.jpg" src="static/horror_shorts/HALLWAY_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_03-480.webp 480w, static/optimized/horror_shorts/HALLWAY_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 3" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_03.jpg" src="static/horror_shorts/HALLWAY_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_04-480.webp 480w, static/optimized/horror_shorts/HALLWAY_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 4" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_04.jpg" src="static/horror_shorts/HALLWAY_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_05-480.webp 480w, static/optimized/horror_shorts/HALLWAY_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 5" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_05.jpg" src="static/horror_shorts/HALLWAY_05.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_06-480.webp 480w, static/optimized/horror_shorts/HALLWAY_06-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 6" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_06.jpg" src="static/horror_shorts/HALLWAY_06.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_07-480.webp 480w, static/optimized/horror_shorts/HALLWAY_07-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 7" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_07.jpg" src="static/horror_shorts/HALLWAY_07.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_08-480.webp 480w, static/optimized/horror_shorts/HALLWAY_08-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 8" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_08.jpg" src="static/horror_shorts/HALLWAY_08.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_09-480.webp 480w, static/optimized/horror_shorts/HALLWAY_09-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 9" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_09.jpg" src="static/horror_shorts/HALLWAY_09.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_10-480.webp 480w, static/optimized/horror_shorts/HALLWAY_10-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 10" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_10.jpg" src="static/horror_shorts/HALLWAY_10.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_11-480.webp 480w, static/optimized/horror_shorts/HALLWAY_11-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 11" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_11.jpg" src="static/horror_shorts/HALLWAY_11.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_12-480.webp 480w, static/optimized/horror_shorts/HALLWAY_12-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 12" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_12.jpg" src="static/horror_shorts/HALLWAY_12.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_13-480.webp 480w, static/optimized/horror_shorts/HALLWAY_13-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 13" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_13.jpg" src="static/horror_shorts/HALLWAY_13.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/HALLWAY_14-480.webp 480w, static/optimized/horror_shorts/HALLWAY_14-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="The Hallway, project image 14" loading="lazy" data-full-src="static/horror_shorts/HALLWAY_14.jpg" src="static/horror_shorts/HALLWAY_14.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-found">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/horror_shorts/FOUND_FOOTAGE0001-1036.webm"></video>
+                        <video data-poster="static/optimized/posters/horror_shorts/FOUND_FOOTAGE0001-1036.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/horror_shorts/FOUND_FOOTAGE0001-1036.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Found Footage</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/horror_shorts/ANALOG_IMAGE_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/horror_shorts/ANALOG_IMAGE_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/horror_shorts/ANALOG_IMAGE_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/horror_shorts/ANALOG_IMAGE_04.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/ANALOG_IMAGE_01-480.webp 480w, static/optimized/horror_shorts/ANALOG_IMAGE_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Found Footage, project image 1" loading="lazy" data-full-src="static/horror_shorts/ANALOG_IMAGE_01.jpg" src="static/horror_shorts/ANALOG_IMAGE_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/ANALOG_IMAGE_02-480.webp 480w, static/optimized/horror_shorts/ANALOG_IMAGE_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Found Footage, project image 2" loading="lazy" data-full-src="static/horror_shorts/ANALOG_IMAGE_02.jpg" src="static/horror_shorts/ANALOG_IMAGE_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/ANALOG_IMAGE_03-480.webp 480w, static/optimized/horror_shorts/ANALOG_IMAGE_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Found Footage, project image 3" loading="lazy" data-full-src="static/horror_shorts/ANALOG_IMAGE_03.jpg" src="static/horror_shorts/ANALOG_IMAGE_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/horror_shorts/ANALOG_IMAGE_04-480.webp 480w, static/optimized/horror_shorts/ANALOG_IMAGE_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Found Footage, project image 4" loading="lazy" data-full-src="static/horror_shorts/ANALOG_IMAGE_04.jpg" src="static/horror_shorts/ANALOG_IMAGE_04.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-snowy">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/ATLANTIC0001-0625.webm"></video>
+                        <video data-poster="static/optimized/posters/environment/ATLANTIC0001-0625.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/ATLANTIC0001-0625.webm" width="1920" height="800"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Arctic Cel-shaded</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/environment/SNOWY_COMPRESSED.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/environment/SNOWY_COMPRESSED2.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/environment/SNOWY_COMPRESSED-480.webp 480w, static/optimized/environment/SNOWY_COMPRESSED-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Arctic Cel-shaded, project image 1" loading="lazy" data-full-src="static/environment/SNOWY_COMPRESSED.jpg" src="static/environment/SNOWY_COMPRESSED.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/environment/SNOWY_COMPRESSED2-480.webp 480w, static/optimized/environment/SNOWY_COMPRESSED2-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Arctic Cel-shaded, project image 2" loading="lazy" data-full-src="static/environment/SNOWY_COMPRESSED2.jpg" src="static/environment/SNOWY_COMPRESSED2.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-school">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/ANIMESTYLE_BACKGROUND0001-0888.webm"></video>
+                        <video data-poster="static/optimized/posters/environment/ANIMESTYLE_BACKGROUND0001-0888.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/environment/ANIMESTYLE_BACKGROUND0001-0888.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Anime Artstyle School Ground</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/environment/ANIME_BACKGROUND.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/environment/ANIME_BACKGROUND-480.webp 480w, static/optimized/environment/ANIME_BACKGROUND-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Anime Artstyle School Ground, project image 1" loading="lazy" data-full-src="static/environment/ANIME_BACKGROUND.jpg" src="static/environment/ANIME_BACKGROUND.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-car">
                     <div class="variant-panel active" id="panel-night">
                         <div class="video-container">
-                            <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_CAR_CRUISING_NIGHT0000-0312.webm"></video>
+                            <video data-poster="static/optimized/posters/lowpoly/LP_CAR_CRUISING_NIGHT0000-0312.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_CAR_CRUISING_NIGHT0000-0312.webm" width="1920" height="1080"></video>
                             <div class="variant-controls icon-overlay">
                                 <button class="variant-btn active" data-target="night" title="Night View">🌙</button>
                                 <button class="variant-btn" data-target="day" title="Day View">☀️</button>
@@ -630,7 +623,7 @@
                     </div>
                     <div class="variant-panel" id="panel-day">
                         <div class="video-container">
-                            <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_CAR_CRUISING0001-0312.webm"></video>
+                            <video data-poster="static/optimized/posters/lowpoly/LP_CAR_CRUISING0001-0312.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_CAR_CRUISING0001-0312.webm" width="1920" height="1080"></video>
                             <div class="variant-controls icon-overlay">
                                 <button class="variant-btn" data-target="night" title="Night View">🌙</button>
                                 <button class="variant-btn active" data-target="day" title="Day View">☀️</button>
@@ -643,44 +636,44 @@
                 </section>
                 <section class="content-body" id="project-lowPolyHut">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/lowPolyHut.webm"></video>
+                        <video data-poster="static/optimized/posters/lowpoly/lowPolyHut.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/lowPolyHut.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Fish Hut</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/lowpoly/FISHHUT_.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/lowpoly/FISHHUT_-480.webp 480w, static/optimized/lowpoly/FISHHUT_-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Fish Hut, project image 1" loading="lazy" data-full-src="static/lowpoly/FISHHUT_.jpg" src="static/lowpoly/FISHHUT_.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="project-truck">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_DESERT_TRUCk0001-0124.webm"></video>
+                        <video data-poster="static/optimized/posters/lowpoly/LP_DESERT_TRUCk0001-0124.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/lowpoly/LP_DESERT_TRUCk0001-0124.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Desert Truck</h2>
                     </div>
                         <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/lowpoly/TRUCKCYCLES.png"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/lowpoly/TRUCKCYCLES-480.webp 480w, static/optimized/lowpoly/TRUCKCYCLES-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Desert Truck, project image 1" loading="lazy" data-full-src="static/lowpoly/TRUCKCYCLES.png" src="static/lowpoly/TRUCKCYCLES.png"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="others-slum">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/HOUSES0000-0414.webm"></video>
+                        <video data-poster="static/optimized/posters/others/HOUSES0000-0414.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/HOUSES0000-0414.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Slums</h2>
                     </div>
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/others/SLUMS_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/others/SLUMS_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/others/SLUMS_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/others/SLUMS_04.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/others/SLUMS_05.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/others/SLUMS_01-480.webp 480w, static/optimized/others/SLUMS_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Slums, project image 1" loading="lazy" data-full-src="static/others/SLUMS_01.jpg" src="static/others/SLUMS_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/others/SLUMS_02-480.webp 480w, static/optimized/others/SLUMS_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Slums, project image 2" loading="lazy" data-full-src="static/others/SLUMS_02.jpg" src="static/others/SLUMS_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/others/SLUMS_03-480.webp 480w, static/optimized/others/SLUMS_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Slums, project image 3" loading="lazy" data-full-src="static/others/SLUMS_03.jpg" src="static/others/SLUMS_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/others/SLUMS_04-480.webp 480w, static/optimized/others/SLUMS_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Slums, project image 4" loading="lazy" data-full-src="static/others/SLUMS_04.jpg" src="static/others/SLUMS_04.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/others/SLUMS_05-480.webp 480w, static/optimized/others/SLUMS_05-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="Slums, project image 5" loading="lazy" data-full-src="static/others/SLUMS_05.jpg" src="static/others/SLUMS_05.jpg"></picture></div>
                     </div>
                 </section>
                 <section class="content-body" id="others-bloodstream">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/BLOODSTREAM_ANIMATION0000-0349.webm"></video>
+                        <video data-poster="static/optimized/posters/others/BLOODSTREAM_ANIMATION0000-0349.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/BLOODSTREAM_ANIMATION0000-0349.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Bloodstream</h2>
@@ -688,10 +681,10 @@
                 </section>
                 <section class="content-body" id="others-bike">
                     <div class="project-gallery">
-                        <div class="gallery-card"><img loading="lazy" src="static/others/BICYCLE_01.jpg"></div>
-                        <div class="gallery-card"><img loading="lazy" src="static/others/BICYCLE_02.jpg"></div>
-                        <div class="gallery-card counter-card"><img loading="lazy" src="static/others/BICYCLE_03.jpg"></div>
-                        <div class="gallery-card hidden-asset"><img loading="lazy" src="static/others/BICYCLE_04.jpg"></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/others/BICYCLE_01-480.webp 480w, static/optimized/others/BICYCLE_01-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="2D Bike, project image 1" loading="lazy" data-full-src="static/others/BICYCLE_01.jpg" src="static/others/BICYCLE_01.jpg"></picture></div>
+                        <div class="gallery-card"><picture><source type="image/webp" srcset="static/optimized/others/BICYCLE_02-480.webp 480w, static/optimized/others/BICYCLE_02-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="2D Bike, project image 2" loading="lazy" data-full-src="static/others/BICYCLE_02.jpg" src="static/others/BICYCLE_02.jpg"></picture></div>
+                        <div class="gallery-card counter-card"><picture><source type="image/webp" srcset="static/optimized/others/BICYCLE_03-480.webp 480w, static/optimized/others/BICYCLE_03-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="2D Bike, project image 3" loading="lazy" data-full-src="static/others/BICYCLE_03.jpg" src="static/others/BICYCLE_03.jpg"></picture></div>
+                        <div class="gallery-card hidden-asset"><picture><source type="image/webp" srcset="static/optimized/others/BICYCLE_04-480.webp 480w, static/optimized/others/BICYCLE_04-960.webp 960w" sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"><img decoding="async" alt="2D Bike, project image 4" loading="lazy" data-full-src="static/others/BICYCLE_04.jpg" src="static/others/BICYCLE_04.jpg"></picture></div>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">2D Bike</h2>
@@ -699,7 +692,7 @@
                 </section>
                 <section class="content-body" id="others-water">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/WATER_ANIMATION_ANIME_STYLE0000-0311.webm"></video>
+                        <video data-poster="static/optimized/posters/others/WATER_ANIMATION_ANIME_STYLE0000-0311.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/WATER_ANIMATION_ANIME_STYLE0000-0311.webm" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Water Animation</h2>
@@ -707,7 +700,7 @@
                 </section>
                 <section class="content-body" id="others-burger">
                     <div class="video-container">
-                        <video class="video-3d" playsinline preload="metadata" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/burger.mp4"></video>
+                        <video data-poster="static/optimized/posters/others/burger.webp" class="video-3d" playsinline preload="none" controlsList="nodownload noplaybackrate noremoteplayback" disablePictureInPicture src="static/others/burger.mp4" width="1920" height="1080"></video>
                     </div>
                     <div class="project-details">
                         <h2 class="active-project-title">Burger</h2>
@@ -716,7 +709,7 @@
             </main>
         </div>
         <footer id="cinematic-footer">
-            <video autoplay id="footer-loop-video" preload="auto" loop muted playsinline src="static/landingV.webm"></video>
+            <video data-poster="static/optimized/posters/landingV.webp" aria-hidden="true" id="footer-loop-video" preload="none" loop muted playsinline src="static/landingV.webm" width="1920" height="1080"></video>
             <div class="footer-overlay">
                 <h2 id="socials">Let's Work Together!</h2>
                 <a class="footer-mailto-btn" href="mailto:cl3d.works@gmail.com">Get In Touch Via Email</a>
@@ -729,8 +722,8 @@
                 </div>
             </div>
         </footer>
-        <div class="lightbox-modal" id="gallery-lightbox">
-            <span class="lightbox-close">&times;</span>
+        <div aria-hidden="true" aria-label="Image preview" aria-modal="true" class="lightbox-modal" id="gallery-lightbox" role="dialog">
+            <button aria-label="Close image preview" class="lightbox-close" type="button">&times;</button>
             <img alt="Enlarged gallery preview" class="lightbox-content" id="lightbox-img">
             <div class="lightbox-nav-hint"></div>
         </div>
